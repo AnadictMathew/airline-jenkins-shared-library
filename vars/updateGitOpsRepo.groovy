@@ -9,7 +9,7 @@ def call(String gitopsRepo, String branch, String imageRepo, String imageTag) {
         sh """
             rm -rf airline-platform-gitops
 
-            git clone -b ${branch} https://${GIT_USERNAME}:${GIT_TOKEN}@github.com/AnadictMathew/airline-platform-gitops.git
+            git clone -b ${branch} git@github.com:AnadictMathew/airline-platform-gitops.git
 
             cd airline-platform-gitops
 
